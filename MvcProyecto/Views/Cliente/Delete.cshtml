@@ -1,0 +1,57 @@
+@model MvcProyecto.Models.Cliente
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Cliente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CedulaJuridica)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CedulaJuridica)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PaginaWeb)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PaginaWeb)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DireccionFisica)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DireccionFisica)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroTelefono)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NumeroTelefono)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sector)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sector)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

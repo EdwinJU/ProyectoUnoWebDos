@@ -1,0 +1,10 @@
+C:\Users\Guisbell\MvcProyecto\bin\MCD\Debug\netcoreapp2.0\MvcProyecto.deps.json
+C:\Users\Guisbell\MvcProyecto\bin\MCD\Debug\netcoreapp2.0\MvcProyecto.runtimeconfig.json
+C:\Users\Guisbell\MvcProyecto\bin\MCD\Debug\netcoreapp2.0\MvcProyecto.runtimeconfig.dev.json
+C:\Users\Guisbell\MvcProyecto\bin\MCD\Debug\netcoreapp2.0\MvcProyecto.dll
+C:\Users\Guisbell\MvcProyecto\bin\MCD\Debug\netcoreapp2.0\MvcProyecto.pdb
+C:\Users\Guisbell\MvcProyecto\obj\MCD\Debug\netcoreapp2.0\MvcProyecto.csproj.CoreCompileInputs.cache
+C:\Users\Guisbell\MvcProyecto\obj\MCD\Debug\netcoreapp2.0\MvcProyecto.AssemblyInfoInputs.cache
+C:\Users\Guisbell\MvcProyecto\obj\MCD\Debug\netcoreapp2.0\MvcProyecto.AssemblyInfo.cs
+C:\Users\Guisbell\MvcProyecto\obj\MCD\Debug\netcoreapp2.0\MvcProyecto.dll
+C:\Users\Guisbell\MvcProyecto\obj\MCD\Debug\netcoreapp2.0\MvcProyecto.pdb
