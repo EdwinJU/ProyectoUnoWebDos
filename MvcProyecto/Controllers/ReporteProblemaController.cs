@@ -81,7 +81,7 @@ namespace MvcProyecto.Controllers
             {
                 return NotFound();
             }
-            ViewData["ClienteId"] = new SelectList(_context.Cliente, "ID", "ID", reporteProblema.ClienteId);
+            ViewData["ClienteId"] = new SelectList(_context.Cliente, "ID", "Nombre", reporteProblema.ClienteId);
             return View(reporteProblema);
         }
 

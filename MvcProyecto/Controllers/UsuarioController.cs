@@ -14,6 +14,7 @@ namespace MvcProyecto.Controllers
 {
     public class UsuarioController : Controller
     {
+        string usuarioLogueado="";
         private readonly MvcProyectoContext _context;
 
         public UsuarioController(MvcProyectoContext context)
@@ -33,11 +34,17 @@ namespace MvcProyecto.Controllers
         }
           public IActionResult Corriente()
         {
-           
+            ViewBag.usuario=usuarioLogueado;
             return View();
         }
         
           public IActionResult Admin()
+        {
+            ViewBag.usuario=usuarioLogueado;
+           
+            return View();
+        }
+         public IActionResult Error()
         {
            
             return View();
@@ -58,6 +65,7 @@ namespace MvcProyecto.Controllers
                 HttpContext.Session.SetString("User", user.ToString());
 
                
+                usuarioLogueado=users.Username.ToString();
 
                 if (user.TipoUsuario == "Admin")
                 {
@@ -67,6 +75,7 @@ namespace MvcProyecto.Controllers
                 else if (user.TipoUsuario == "Corriente")
                 {
                     return RedirectToAction("Corriente");
+                    
                 }
 
                ViewData["Message"]= HttpContext.Session.GetString("User");
@@ -75,7 +84,7 @@ namespace MvcProyecto.Controllers
             }
             else
             {
-                return RedirectToAction("Corriente");
+                return RedirectToAction("Error");
             }
             return View();
 
