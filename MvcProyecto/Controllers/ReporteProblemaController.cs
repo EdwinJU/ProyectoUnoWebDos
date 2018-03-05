@@ -47,7 +47,7 @@ namespace MvcProyecto.Controllers
         // GET: ReporteProblema/Create
         public IActionResult Create()
         {
-            ViewData["ClienteId"] = new SelectList(_context.Cliente, "ID", "ID");
+            ViewData["ClienteId"] = new SelectList(_context.Cliente, "ID", "Nombre");
             return View();
         }
 

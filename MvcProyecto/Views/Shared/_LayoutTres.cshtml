@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -26,11 +26,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Home</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Bienvenido Usuario</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right" style="background-color:black;">
-                    <li><a asp-area="" asp-controller="Usuario" asp-action="Login">Login</a></li>
+                    <li><a asp-area="" asp-controller="Usuario" asp-action="Index">Usuarios</a></li>
+                    <li><a asp-area="" asp-controller="Cliente" asp-action="Index">Clientes</a></li>
+                    <li><a asp-area="" asp-controller="Contacto" asp-action="Index">Contactos</a></li>
+                    <li><a asp-area="" asp-controller="Reunion" asp-action="Index">Reuniones</a></li>
+                    <li><a asp-area="" asp-controller="ReporteProblema" asp-action="Index">Reportes</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Logout</a></li>
                 </ul>
             </div>
         </div>

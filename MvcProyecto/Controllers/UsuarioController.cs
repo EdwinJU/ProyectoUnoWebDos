@@ -28,11 +28,21 @@ namespace MvcProyecto.Controllers
         }
         public IActionResult Login()
         {
-            //List<Make> makes = new List<Make>();
-            //makes= db.MvcPrueba.ToList();
-            //ViewBag.listaCursos = makes;
+         
             return View();
         }
+          public IActionResult Corriente()
+        {
+           
+            return View();
+        }
+        
+          public IActionResult Admin()
+        {
+           
+            return View();
+        }
+
 
         [HttpPost]
         public async Task<IActionResult> Login([Bind("Username,Password")] Usuario users)
@@ -47,22 +57,25 @@ namespace MvcProyecto.Controllers
 
                 HttpContext.Session.SetString("User", user.ToString());
 
+               
+
                 if (user.TipoUsuario == "Admin")
                 {
 
-                    return RedirectToAction("Create");
+                    return RedirectToAction("Admin");
                 }
                 else if (user.TipoUsuario == "Corriente")
                 {
-                    return RedirectToAction("Edit");
+                    return RedirectToAction("Corriente");
                 }
+
+               ViewData["Message"]= HttpContext.Session.GetString("User");
 
 
             }
             else
             {
-                ModelState.AddModelError("", "El Usuario o la contraseña son erroneas");
-                return RedirectToAction("Index");
+                return RedirectToAction("Corriente");
             }
             return View();
 
